@@ -1,0 +1,25 @@
+{% extends 'books/base.html' %}
+{% block link %}
+<h3 style="position: absolute;top:40px;right: 30px;">
+    <a href="{% url 'book_list' %}">book list</a>
+</h3>
+{% endblock link %}
+​{% block content %}
+<div class="container" style="display: flex;flex-direction: column;align-items: center;">
+    <h2>
+        Book Details
+    </h2>
+    <div class="card" style="height: 400;width: 400px;">
+        <p style="text-align: center;">title: {{book.title}}</p>
+        <p style="text-align: center;">auther: {{book.auther}}}</p>
+        <p style="text-align: center;">category: {{book.category}}</p>
+        <p style="text-align: center;">isbn: {{book.isbn}}</p>
+        <p style="text-align: center;">description: {{book.description}}</p>
+        <p style="text-align: center;">enterd by: {{book.employee}}</p>
+    </div>
+    <div style="height: 400;width: 400px;display: flex;justify-content: space-around;margin-top: 25px;">
+        <a href="{% url 'book_update' book.pk %}">Update</a>
+        <a href="{% url 'book_delete' book.pk %}">Delete</a>
+    </div>
+</div>
+{% endblock content %}

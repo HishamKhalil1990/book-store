@@ -1,0 +1,18 @@
+{% extends 'books/base.html' %}
+{% block link %}
+<h3 style="position: absolute;top:40px;right: 30px;">
+    <a href="{% url 'book_list' %}">book list</a>
+</h3>
+{% endblock link %}
+​{% block content %}
+<div class="container" style="display: flex;flex-direction: column;align-items: center;">
+    <form action="" method="POST">
+        {% csrf_token %}
+        <p>Do you want to Delete {{book.title}}</p>
+        <input type="submit" value="Delete">
+    </form>
+</div>
+{% endblock content %}
+
+
+

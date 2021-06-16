@@ -1,4 +1,6 @@
-> A batteries-included Django starter project. For a production-ready version see the book [Django for Professionals](https://djangoforprofessionals.com).
+
+PR link (https://github.com/HishamKhalil1990/book-store/pull/2)
+<!-- > A batteries-included Django starter project. For a production-ready version see the book [Django for Professionals](https://djangoforprofessionals.com).
 
 ## 🚀 Features
 
@@ -145,4 +147,4 @@ $ docker-compose run --rm web pip-compile requirements/requirements.in
 - [Configuring Google](https://wsvincent.com/django-allauth-tutorial-custom-user-model/#google-credentials)
 - [Configuring Facebook](http://www.sarahhagstrom.com/2013/09/the-missing-django-allauth-tutorial/#Create_and_configure_a_Facebook_app)
 - [Configuring Github](https://wsvincent.com/django-allauth-tutorial/)
-- `django-allauth` supports [many, many other providers in the official docs](https://django-allauth.readthedocs.io/en/latest/providers.html) -->
+- `django-allauth` supports [many, many other providers in the official docs](https://django-allauth.readthedocs.io/en/latest/providers.html) --> -->
