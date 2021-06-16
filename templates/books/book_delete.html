@@ -1,10 +1,13 @@
-{% extends 'books/base.html' %}
-{% block link %}
-<h3 style="position: absolute;top:40px;right: 30px;">
-    <a href="{% url 'book_list' %}">book list</a>
-</h3>
-{% endblock link %}
+{% extends '_base.html' %}
 ​{% block content %}
+<header style="display: flex;justify-content: space-between;">
+    <h2>
+        Delete Book
+    </h2>
+    <h3>
+        <a href="{% url 'book_list' %}">book list</a>
+    </h3>
+</header>
 <div class="container" style="display: flex;flex-direction: column;align-items: center;">
     <form action="" method="POST">
         {% csrf_token %}
