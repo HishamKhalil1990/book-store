@@ -1,5 +1,5 @@
 
-PR link (https://github.com/HishamKhalil1990/book-store/pull/2)
+PR link (https://github.com/HishamKhalil1990/book-store/pull/1)
 <!-- > A batteries-included Django starter project. For a production-ready version see the book [Django for Professionals](https://djangoforprofessionals.com).
 
 ## 🚀 Features
