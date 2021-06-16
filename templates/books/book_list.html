@@ -1,0 +1,24 @@
+{% extends 'books/base.html' %}
+​{% block title %}
+home
+{% endblock title %}
+{% block content %}
+<div id="container">
+    <h2>
+        Books
+    </h2>
+    <div id=cards>
+        {% for book in object_list %}
+        <div class="card">
+            <h2>{{book.title}}</h2>
+            <div>
+                <a href="{% url 'book_detail' book.pk %}">Book Detail</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <h2>
+        <a href="{% url 'book_create' %}">Add Book</a>
+    </h2>
+</div>
+{% endblock content %}

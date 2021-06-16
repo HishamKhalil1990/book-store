@@ -1,0 +1,17 @@
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<header style="display: flex;justify-content: space-between;">
+    <h2>
+        Add a Book
+    </h2>
+    <h3>
+        <a href="{% url 'book_list' %}">book list</a>
+    </h3>
+</header>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form|crispy}}
+    <input type="submit" value="ADD">
+</form>
+{% endblock content %}
